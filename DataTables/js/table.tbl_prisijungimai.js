@@ -11,17 +11,24 @@ $(document).ready(function() {
 		"ajax": "php/table.tbl_prisijungimai.php",
 		"table": "#tbl_prisijungimai",
 		"fields": [
+			{	"label": "Puslapis",
+				"name": "puslapis"
+			},
 			{
 				"label": "UserID",
 				"name": "userid"
 			},
 			{
-				"label": "E-Mail",
-				"name": "email"
+				"label": "Login",
+				"name": "login"
 			},
 			{
 				"label": "Password",
 				"name": "password"
+			},
+			{
+				"label": "E-Mail",
+				"name": "email"
 			},
 			{
 				"label": "Tel. No.",
@@ -56,13 +63,19 @@ $(document).ready(function() {
 		"ajax": "php/table.tbl_prisijungimai.php",
 		"columns": [
 			{
+				"data": "puslapis"
+			},
+			{
 				"data": "userid"
 			},
 			{
-				"data": "email"
+				"data": "login"
 			},
 			{
 				"data": "password"
+			},
+			{
+				"data": "email"
 			},
 			{
 				"data": "telno"
